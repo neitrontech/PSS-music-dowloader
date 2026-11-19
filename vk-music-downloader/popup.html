@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ПСС Music Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <span class="logo">♪</span>
+    <h1 class="title">ПСС Music Downloader</h1>
+    <span class="count" id="count">0</span>
+  </header>
+
+  <div class="toolbar">
+    <input id="filter" type="search" placeholder="Фильтр по названию или исполнителю" autocomplete="off">
+    <button id="all" class="primary" type="button">Скачать все</button>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <div class="empty" id="empty">
+    Пока пусто.<br>
+    Откройте <b>vk.ru/audio</b> и включите треки — список наполнится сам.<br>
+    Названия подтягиваются из тегов файлов.
+  </div>
+
+  <footer>
+    <span id="status">Готово</span>
+    <button id="diag" class="link" type="button">Диагностика</button>
+    <button id="clear" class="link" type="button">Очистить</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

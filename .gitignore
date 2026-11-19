@@ -1,0 +1,25 @@
+# В рабочей папке AutoClaw лежит много личного (VPN-заметки, ключи, архивы),
+# поэтому версионируем только проект расширения.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/vk-music-downloader/
+!/build/
+/build/*
+!/build/make-icons.py
+!/build/make-zip.py
+!/build/sign.ps1
+!/build/test-parse.js
+
+# служебный мусор внутри проекта
+build/artifacts/
+build/amo-keys.json
+build/profiles.ini.restored
+build/ffprobe-*/
+build/ff-console*.txt
+node_modules/
+
+# служебные файлы web-ext
+.amo-upload-uuid
+*.xpi

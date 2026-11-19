@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "ПСС Music Downloader",
+  "version": "1.2.0",
+  "description": "Сохраняет треки в MP3 для личного офлайн-прослушивания.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pss-music-downloader@localhost",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "downloads",
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*.vk.com/*",
+    "*://*.vk.ru/*",
+    "*://*.userapi.com/*",
+    "*://*.userapi.ru/*",
+    "*://*.mycdn.me/*",
+    "*://*.vkuser.net/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "ПСС Music Downloader",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  }
+}
